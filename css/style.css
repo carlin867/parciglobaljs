@@ -1,0 +1,87 @@
+/* 
+    TRANSITIONS:
+*/
+/* 
+    ease - especifica um efeito de transição com inicio lento
+    linear - especifica um efeito de transição com a mesma velocidade
+    ease-in - especifica um efeito de transição com inicio lento
+    ease-out - especifica um efeito de transição com final lento
+    ease-in-out - especifica um efeito de transição com inicio e final lentos
+
+*/
+@font-face {
+    font-family: 'open-sans';
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'jersey';
+    src: url(Jersey_15/Jersey15-Regular.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: all 2s ease;
+}
+header{
+    display: flex;
+    height: 60px;
+    background-image: linear-gradient(75deg, rgb(45, 45, 45),rgb(75, 74, 74));
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.logo img{
+    width: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.logo img:hover{
+    scale: 1.1;
+}
+.frase-logo{
+    display: none;
+}
+.lista-menu{
+    display: flex;
+    list-style-type: none;
+}
+.btn-menu{
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'jersey';
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.btn-menu:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+.logo-btn{
+    display: none;
+    cursor: pointer;
+}
+.logo-btn img{
+    width: 50px;
+    transition: all 0.1s;
+}
+.logo-btn img:hover{
+    scale: 1.1;
+}
+.frase-logo{
+    display: none;
+}
+.menu-responsive{
+    display: none;
+}
+
+
+
+

@@ -1,0 +1,136 @@
+/* 
+    TRANSITIONS:
+*/
+/* 
+    ease - especifica um efeito de transição com inicio lento
+    linear - especifica um efeito de transição com a mesma velocidade
+    ease-in - especifica um efeito de transição com inicio lento
+    ease-out - especifica um efeito de transição com final lento
+    ease-in-out - especifica um efeito de transição com inicio e final lentos
+
+*/
+@font-face {
+  font-family: "open-sans";
+  src: url(Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: "jersey";
+  src: url(Jersey_15/Jersey15-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "jersey", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg , rgb(158, 158, 158), rgb(94, 93, 93));
+}
+.container {
+  background-color: rgb(245, 245, 245);
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(60, 60, 60);
+}
+
+#login,#cadastro{
+  position: absolute;
+  margin-top: 80px;
+  transition: 0.5s;
+  width: 300px;
+  height: 400px;
+}
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 black;
+}
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+#btncadastro{
+  color: white;
+  left: -5.5px;
+}
+#btnlogin {
+  left: -5.5px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, black, gray);
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0px 8px 35px;
+  outline: none;
+  width: 100%;
+}
+#submit-entrar,#submit-cadastrar{
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  padding: 8px 0 8px 0px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+#submit-entrar:hover,#submit-cadastrar:hover {
+  background-color: black;
+  color: white;
+}
+.divCheck{
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+#cadastro{
+  left: 25px;
+}
+#login{
+  left: 450px;
+}
+.img-input{
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+#img-email{
+  top: 40px;
+}
+#img-password{
+  top: 114px;
+}
+#img-password2{
+  top: 190px;
+}

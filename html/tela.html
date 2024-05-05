@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Cadastro</title>
+    <link rel="stylesheet" href="../css/login-cadastro.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttonsForm">
+        <div class="btnColor"></div>
+        <button id="btncadastro">Cadastrar</button>
+        <button id="btnlogin">Login</button>
+      </div>
+      <div id="login">
+        <input
+          type="text"
+          name="nome"
+          id="inomel"
+          placeholder="Usuário"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="password"
+          name="senha"
+          id="isenhal"
+          placeholder="*******"
+        />
+
+        <div class="divCheck">
+          <input type="checkbox" name="relembrar" id="irelembrar" />
+          <span>relembre minha senha</span>
+        </div>
+
+        <button id="submit-entrar">Entrar</button>
+      </div>
+
+      <div id="cadastro">
+        <input
+          type="text"
+          name="usuario"
+          id="iusuarioc"
+          required
+          placeholder="Usuário"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          name="email"
+          id="iemailc"
+          placeholder="example.pratico867@gmail.com"
+          required
+        />
+        <input
+          type="password"
+          name="senha"
+          id="isenhac"
+          placeholder="*******"
+        />
+
+        <div class="divCheck">
+          <input type="checkbox" name="relembrar" id="irelembrar" />
+          <span>relembre minha senha</span>
+        </div>
+
+        <button id="submit-cadastrar">Cadastrar</button>
+      </div>
+    </div>
+
+    <script src="../js/tela.js"></script>
+  </body>
+</html>
+
