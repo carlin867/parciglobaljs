@@ -74,6 +74,9 @@ header{
     background-color: white;
     color: black;
 }
+.btn-js{
+    cursor: pointer;
+}
 .logo-btn{
     margin-top: 1%;
     display: none;

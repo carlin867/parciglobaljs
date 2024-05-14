@@ -9,6 +9,9 @@ function verificarPrimeiraVisita() {
     sessionStorage.setItem("visitou", "true"); // Marca que o usuário já visitou o site
   }
 }
+function galeriaBtn(){
+  location.href = 'html/galeria.html'
+}
 
 var menur = document.querySelector(".menu-responsive");
 var btn_img = document.querySelector('.logo-btn>img')
@@ -40,3 +43,9 @@ else{
     }
   )
 }
+
+
+
+
+
+
