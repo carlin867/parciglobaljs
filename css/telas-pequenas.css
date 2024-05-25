@@ -70,7 +70,7 @@ header .div-flex{
     align-items: center;
     justify-content: center;
     text-align: justify;
-    width: 100vw;
+    width: 100%;
     padding: 50px;
     font-family: 'jersey';
     font-size: 30px;
@@ -82,4 +82,35 @@ header .div-flex{
     transform: translate(-50%, -50%);
     transition: all 2s ease-in-out;
     background-color: #fff;
+}
+.div-secundaria{
+    display: none;
+}
+.titulo{
+    font-size: 8em;
+}
+#fundamentos .titulo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-fundamento{
+    position: relative;
+    margin-left: 50%;
+}
+#regras .div-principal{
+    display: flex;
+}
+.item-regras{
+    
+}
+.item-menu .btn-menu a{
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn-menu{
+    padding: 0;
 }

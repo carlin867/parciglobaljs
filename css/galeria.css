@@ -3,20 +3,52 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'jersey';
+    src: url(Jersey_15/Jersey15-Regular.ttf);
+}
+body{
+    background-image: linear-gradient(90deg, rgb(187, 187, 187), rgb(203, 203, 203));
+}
 .slider{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.slide-centro img{
-    width: 700px;
+.slide-centro{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Defina a largura desejada */
+    height: 430px; /* Defina a altura desejada */
+   
+    background: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
 }
+.slide-centro .frs-slide{
+    width: 500px;
+    height: 100px;
+    text-align: justify;
+    align-self: center;
+    font-family: 'jersey';
+    font-size: 30px;
+}
+
+.slide-centro img{
+    width: 400px;
+}
+
 .slides{
     display: flex;
     flex-direction: row;
-    column-gap: 60px;
+    border: 1px solid white;
+    margin-top: 65px;
+    border-radius: 10px;
 }
 .slides img{
     width: 250px;
@@ -28,5 +60,5 @@
 }
 .slides img:hover{
     background-color: rgb(214, 214, 214);
-    border-radius: 50%;
+    border-radius: 10px;
 }
