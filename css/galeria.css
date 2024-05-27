@@ -11,6 +11,8 @@ body{
     background-image: linear-gradient(90deg, rgb(187, 187, 187), rgb(203, 203, 203));
 }
 .slider{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,4 +63,27 @@ body{
 .slides img:hover{
     background-color: rgb(214, 214, 214);
     border-radius: 10px;
+}
+.prox_back{
+    fill: rgb(130, 130, 130);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: .3s ease-in-out;
+    padding: 10px;
+}
+.prox_back:hover{
+    fill: white;
+}
+#back{
+    margin-left: 10px;
+    top: 50%;
+    left: 0;
+}
+#prox{
+    margin-right: 10px;
+    top: 50%;
+    right: 0; 
 }
