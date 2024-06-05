@@ -32,10 +32,9 @@ body {
 header {
   display: flex;
   height: 60px;
-  background-image: linear-gradient(90deg, #767373, #808081);
+  background: transparent;
   justify-content: space-around;
   align-items: center;
-  color: white;
 }
 .logo img {
   width: 50px;
@@ -79,7 +78,7 @@ header {
   transition: all 0.2s ease-in-out;
   padding: 20px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .btn-js {
   cursor: pointer;
@@ -137,10 +136,7 @@ header {
   background: linear-gradient(45deg, rgb(57, 57, 57), rgb(56, 56, 56));
   align-items: center;
 }
-.div-principal {
-  display: flex;
-  flex-direction: column;
-}
+
 .div-secundaria img {
   width: 569px;
   height: 100vh;
@@ -149,21 +145,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.div-centro .titulo {
-  color: white;
-}
-.pag .div-principal .titulo,
+.pag .div-centro .titulo,
 .conteudo {
   color: white;
   margin-left: 50px;
 }
 .titulo {
+  text-align: center;
   margin-bottom: 10px;
   font-size: 8em;
   font-family: "jersey";
@@ -221,7 +216,7 @@ dialog img {
 }
 
 #gif1 {
-  background-image: url(../imagens/gif1.gif);
+  background-image: url(../imagens/james_naismith.jpeg);
 }
 #gif2 {
   background-image: url(../imagens/gif2.gif);
@@ -237,15 +232,11 @@ dialog img {
 }
 .item-fundamento {
   list-style-type: upper-roman;
+  position: relative;
+  left: 50%;
 }
 .link {
   color: white;
-}
-.correcao-img {
-  margin-left: 100px;
-}
-.correcao-conteudo {
-  margin-left: 50%;
 }
 .item-falta {
   list-style-type: decimal-leading-zero;
@@ -389,3 +380,15 @@ dialog img {
   transform: translate(-50%, -50%);
   transition: all 2s ease-in-out;
 }
+@media (max-width:769px) {
+  .titulo{
+    font-size: 1em;
+  }
+  .conteudo{
+    max-width: 400px;
+    font-size: 1em;
+}
+}
+
+/* Animation */
+

@@ -8,63 +8,100 @@
     src: url(Jersey_15/Jersey15-Regular.ttf);
 }
 body{
-    background-image: linear-gradient(90deg, rgb(187, 187, 187), rgb(203, 203, 203));
+    transition: all .5s ease-in-out;
 }
-.slider{
+.slides{
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
-.slide-centro{
+.slider{
+    height: 100%;
+}
+#lakers{
+    background-image: linear-gradient(to bottom,#FDB927,#552583);
+}
+#bulls{
+    background-image: linear-gradient(to bottom,#CE1141,#000000);
+}
+#golden{
+    background-image: linear-gradient(to bottom,#FFC72C,#1D428A);
+}
+#celtics{
+    background-image: linear-gradient(to bottom,#FFFFFF,#007A33);
+}
+#nuggets{
+    background-image: linear-gradient(to bottom,#1D428A,#FEC524);
+}
+#spurs{
+    background-image: linear-gradient(to bottom,#000000,#C4CED4);
+}
+@media (max-width: 1000px){
+    .slides{
+        flex-direction: column;
+        margin-top: 97px;
+    }
+    .slider{
+        width: 100%;
+    }
+    #lakers{
+        background-image: linear-gradient(to right,#FDB927,#552583);
+    }
+    #bulls{
+        background-image: linear-gradient(to right,#CE1141,#000000);
+    }
+    #golden{
+        background-image: linear-gradient(to right,#FFC72C,#1D428A);
+    }
+    #celtics{
+        background-image: linear-gradient(to right,#FFFFFF,#007A33);
+    }
+    #nuggets{
+        background-image: linear-gradient(to right,#1D428A,#FEC524);
+    }
+    #spurs{
+        background-image: linear-gradient(to right,#000000,#C4CED4);
+    }
+}
+.imagens{
+    width: 200px;
+    height: 150px;
+}
+.flex{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%; /* Defina a largura desejada */
-    height: 430px; /* Defina a altura desejada */
-   
-    background: url();
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
-
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
-.slide-centro .frs-slide{
-    width: 500px;
-    height: 100px;
-    text-align: justify;
-    align-self: center;
+.flex .img-modal{
+    width: 300px;
+}
+.flex .frs-modal{
+    font-size: 2em;
     font-family: 'jersey';
-    font-size: 30px;
 }
 
-.slide-centro img{
-    width: 400px;
+.img-modal{
+    width: 100px;
 }
 
-.slides{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid white;
-    margin-top: 65px;
-    border-radius: 10px;
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    width: 900px;
+    min-width: 492px;
+    height: 500px;
+    overflow: hidden;
 }
-.slides img{
-    width: 250px;
-    height: 200px;
-    padding: 10px; 
-    border-radius: 8px;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-}
-.slides img:hover{
-    background-color: rgb(214, 214, 214);
-    border-radius: 10px;
-}
-.prox_back{
+
+
+/* .prox_back{
     fill: rgb(130, 130, 130);
     width: 60px;
     height: 60px;
@@ -86,4 +123,4 @@ body{
     margin-right: 10px;
     top: 50%;
     right: 0; 
-}
+} */

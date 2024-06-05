@@ -7,54 +7,96 @@
     <link rel="stylesheet" href="../css/galeria.css" />
   </head>
   <body>
-    <div class="slider">
-      <div class="slide-centro">
-        <img src="../imagens/nba.png" alt="" class="img-centro"/>
-        <p class="frs-slide">
-          NBA é a sigla para National Basketball Association. Em tradução livre
-          para português, NBA significa Associação Nacional de Basquete. Por isso, ela é
-          considerada a principal liga de basquete profissional do mundo, além
-          de ser o torneio de basquete mais assistido em todo o globo. NBA é a
-          sigla para National Basketball Association.
-        </p>
-      </div>
-
-      <div class="slides">
+    <div class="slides">
+      <div class="slider" id="lakers">
         <img
           src="../imagens/Los-Angeles-Lakers-Logo.png"
           alt=""
-          class="img-slides"
-          id="img1"
+          class="imagens"
         />
-        <img
-          src="../imagens/Chicago_bulls_logo.png"
-          alt=""
-          class="img-slides"
-          id="img2"
-        />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/kobe.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              Los Angeles Lakers é uma das maiores franquias da historia da NBA,
+              na qual formou e fez parte da história dos maiores atletas da
+              liga, possue em torno de 17 titulos,e 32 aparicões em finais.
+            </p>
+          </div>
+        </dialog>
+      </div>
+      <div class="slider" id="bulls">
+        <img src="../imagens/Chicago_bulls_logo.png" alt="" class="imagens" />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/mj.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              Chicago Bulls é um franquia que teve muito sucesso nos anos 90
+              conquistando 2 tricampeonatos nessa década, é o time onde o melhor
+              jogador da hístoria da NBA jogou, Michal Jordan
+            </p>
+          </div>
+        </dialog>
+      </div>
+      <div class="slider" id="golden">
         <img
           src="../imagens/Golden-State-Warriors-Logo.png"
           alt=""
-          class="img-slides"
-          id="img3"
+          class="imagens"
         />
-        <img
-          src="../imagens/Denver-Nuggets.png"
-          alt=""
-          class="img-slides"
-          id="img4"
-        />
-        <img
-          src="../imagens/Boston-Celtics-Logo.png"
-          alt=""
-          class="img-slides"
-          id="img5"
-        />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/curry.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              Golden State Warriors é a franquia com sede em São Francisco,
+              Califórnia. Equipe que conseguiu conquistar 7 campeonatos da liga,
+              e atualmente tem em seu arsenal o jogador com mais cesta de 3
+              pontos.
+            </p>
+          </div>
+        </dialog>
       </div>
-       
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="prox_back" id="back"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="prox_back" id="prox"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+      <div class="slider" id="celtics">
+        <img src="../imagens/Boston-Celtics-Logo.png" alt="" class="imagens" />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/white.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              É conhecido mundialmente por obter 17 títulos da NBA, o que o
+              deixa como o maior vencedor da história da liga junto ao Los
+              Angeles Lakers. Boston Basketball Partners L.L.C. Tanto o apelido
+              de 'Celtics' quanto o mascote 'Lucky the Leprechaun' são uma
+              homenagem à população irlandesa historicamente grande de Boston.
+            </p>
+          </div>
+        </dialog>
+      </div>
+      <div class="slider" id="nuggets">
+        <img src="../imagens/Denver-Nuggets.png" alt="" class="imagens" />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/murray.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              Os Denver Nuggets são uma equipa profissional de basquetebol
+              sediada em Denver, Colorado. Fundada em 1967 como membro da
+              Associação Americana de Basquetebol (ABA), a equipa tem uma
+              história rica e tem sido um pilar fundamental na cidade de Denver
+              durante mais de 50 anos.
+            </p>
+          </div>
+        </dialog>
+      </div>
+      <div class="slider" id="spurs">
+        <img src="../imagens/Spurs.png" alt="" class="imagens" />
+        <dialog class="modal">
+          <div class="flex">
+            <img src="../imagens/tim_ducan.png" alt="" class="img-modal" />
+            <p class="frs-modal">
+              Os San Antonio Spurs têm cinco títulos da NBA e são conhecidos por seu jogo coletivo sob o comando de Gregg Popovich. Destaques históricos incluem Tim Duncan, David Robinson, Manu Ginóbili e Tony Parker. A franquia é reconhecida pela cultura organizacional estável e pelo desenvolvimento de jogadores. Em reconstrução após a aposentadoria de estrelas, continuam competitivos.
+            </p>
+          </div>
+        </dialog>
+      </div>
     </div>
 
     <script src="../js/galeria.js"></script>

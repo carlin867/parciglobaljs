@@ -104,3 +104,46 @@ modal.forEach((e, i) => {
     });
   });
 });
+
+
+
+const header = document.querySelector('header');
+
+
+function scrollHeader() {
+  const scrollTop = window.scrollY;
+  const link_btn = [...document.querySelectorAll('.btn-menu>a')]
+  const btn_menu = [...document.querySelectorAll('.btn-menu')]
+  console.log(scrollTop);
+
+  if (scrollTop > 60) {
+    header.style.background = '#696969';
+    link_btn.forEach(
+      (e,i)=>{
+        e.style.color = 'white';
+      }
+    )
+    btn_menu.forEach(
+      (e,i)=>{
+        e.style.background = '#696969';
+      }
+    )
+  } else {
+    header.style.background = ''; 
+    link_btn.forEach(
+      (e,i)=>{
+        e.style.color = '';
+      }
+    )
+    btn_menu.forEach(
+      (e,i)=>{
+        e.style.background = '';
+      }
+    )
+  }
+}
+window.addEventListener('scroll',
+  ()=>{
+    scrollHeader()
+  }
+)

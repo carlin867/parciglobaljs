@@ -53,7 +53,7 @@ header .div-flex{
     display: block;
 }
 .btn-menu {
-    background-image: linear-gradient(90deg, #767373,#808081);
+    background: transparent;
     width: 100%;
     height: 100%;
     display: block;
@@ -89,22 +89,11 @@ header .div-flex{
 .titulo{
     font-size: 8em;
 }
-#fundamentos .titulo{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.item-fundamento{
-    position: relative;
-    margin-left: 50%;
-}
 #regras .div-principal{
     display: flex;
 }
-.item-regras{
-    
-}
+
 .item-menu .btn-menu a{
     display: block;
     width: 100%;
@@ -113,4 +102,36 @@ header .div-flex{
 }
 .btn-menu{
     padding: 0;
+}
+.item-fundamento {
+    list-style-type: upper-roman;
+    position: static;
+    margin-left: 49%;
+}
+.div-posicoes{
+    flex-direction: column;
+}
+.posicoe{
+    width: 90px;
+}
+#ala-armador{
+    position: relative;
+    left: 7px;
+}
+.div-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.pag .div-centro .titulo{
+    text-align: center;
+  color: white;
+  font-size: 3em;
+  
 }
