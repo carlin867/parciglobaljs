@@ -20,6 +20,10 @@ body{
 .slider{
     height: 100%;
 }
+dialog{
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0));
+    border-radius: 10px;
+}
 #lakers{
     background-image: linear-gradient(to bottom,#FDB927,#552583);
 }
@@ -64,6 +68,19 @@ body{
     #spurs{
         background-image: linear-gradient(to right,#000000,#C4CED4);
     }
+    .btn-voltar{
+        position: absolute;
+        width: 3em;
+        height: 3em;
+        fill: white;
+        top: 0;
+        transition: .4s ease;
+        background-color: white;
+        border-radius: 0 0 30px 0;
+    }
+    .btn-voltar:hover{
+        fill: black;
+    }
 }
 .imagens{
     width: 200px;
@@ -82,6 +99,7 @@ body{
 .flex .frs-modal{
     font-size: 2em;
     font-family: 'jersey';
+    color: white;
 }
 
 .img-modal{
@@ -100,27 +118,17 @@ body{
     overflow: hidden;
 }
 
-
-/* .prox_back{
-    fill: rgb(130, 130, 130);
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+.btn-voltar{
     position: absolute;
-    transform: translateY(-50%);
-    transition: .3s ease-in-out;
-    padding: 10px;
+    width: 3em;
+    height: 3em;
+    fill: black;
+    top: 0;
+    transition: .4s ease;
+    background-color: white;
+    border-radius: 0 0 30px 0;
 }
-.prox_back:hover{
+.btn-voltar:hover{
     fill: white;
+    background-color: black;
 }
-#back{
-    margin-left: 10px;
-    top: 50%;
-    left: 0;
-}
-#prox{
-    margin-right: 10px;
-    top: 50%;
-    right: 0; 
-} */

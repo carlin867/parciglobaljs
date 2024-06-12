@@ -43,49 +43,8 @@ if (window.innerWidth >= 900) {
 const modal = [...document.querySelectorAll("dialog")];
 const img_modal = [...document.querySelectorAll("dialog>img")];
 const pos = [...document.querySelectorAll(".posicoe")];
-const img_pos = [
-  [
-    "imagens/curry-pos.png",
-    "imagens/irvirg-pos.png",
-    "imagens/magic-pos.png",
-    "imagens/iverson-pos.png",
-    "imagens/paul-pos.png",
-  ],
-  [
-    "imagens/mj-pos.png",
-    "imagens/iverson-pos.png",
-    "imagens/kobe-pos.png",
-    "imagens/leandro-pos.png",
-    "imagens/west-pos.png",
-  ],
-  [
-    " imagens/lebron-pos.png",
-    "imagens/durant-pos.png",
-    "imagens/butler-pos.png",
-    "imagens/leonard-pos.png",
-    "imagens/carlos-pos.png",
-  ],
-  [
-    "imagens/ducan-pos.png",
-    "imagens/durant-pos.png",
-    "imagens/giannis-pos.png",
-    "imagens/antony-pos.png",
-    "imagens/larry-pos.png",
-  ],
-  [
-    "imagens/antony-pos.png",
-    "imagens/suaq-pos.png",
-    "imagens/russel-pos.png",
-    "imagens/jabbar-pos.png",
-    "imagens/ducan-pos.png",
-  ],
-];
 
-// const armador = document.querySelector("#armador>img");
-// const ala_armador = document.querySelector("#ala-armador>img");
-// const ala = document.querySelector("#ala>img");
-// const ala_pivo = document.querySelector("#ala-pivo>img");
-// const pivo = document.querySelector("#pivo>img");
+
 
 pos.forEach((e, i) => {
   e.addEventListener("click", () => {
@@ -100,7 +59,7 @@ modal.forEach((e, i) => {
   const imgs = e.querySelectorAll("img");
   imgs.forEach((el, ind) => {
     el.addEventListener("click", () => {
-      pos[i].src = img_pos[i][ind];
+      pos[i].src = el.src;
     });
   });
 });
