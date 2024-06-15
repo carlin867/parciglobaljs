@@ -1,14 +1,15 @@
 verificarPrimeiraVisita();
 
 function verificarPrimeiraVisita() {
-  if (!sessionStorage.getItem("visitou")) {
+  if (!localStorage.getItem("visitou")) {
     setTimeout(function () {
       alert("Você será redirecionada para a tela de Login/Cadastro!");
       location.href = "html/tela.html"; // Redireciona para a página de login/cadastro após 2 segundos
     }, 5000);
-    sessionStorage.setItem("visitou", "true"); // Marca que o usuário já visitou o site
+    localStorage.setItem("visitou", "true"); // Marca que o usuário já visitou o site
   }
 }
+
 function galeriaBtn() {
   location.href = "html/galeria.html";
 }

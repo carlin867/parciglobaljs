@@ -32,8 +32,7 @@ entrar.addEventListener('click',
         let nome_adm = 'carlin867'
         let senha_adm = 'thecrias'
         if(nome == nome_adm && senha == senha_adm){
-            alert(`Bem Vindo de Volta ${nome_adm}`)
-            location.href = '../index.html'
+            location.href = '../html/tela_loading.html'
         }else{
             alert('Usuário ou senha incorretos')
         }
@@ -53,8 +52,7 @@ cadastro.addEventListener('click',
             alert('Conta Existente!')
         }
         else{
-            alert('Conta Cadastrada Com Sucesso!')
-            location.href = '../index.html'
+            location.href = '../html/tela_loading.html'
         }
     }
 )
