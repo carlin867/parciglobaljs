@@ -1,4 +1,4 @@
-
+var easteregg = document.querySelector('#egg')
 var img_slides = [...document.querySelectorAll(".imagens")];
 var modal = [...document.querySelectorAll(".modal")];
 
@@ -13,3 +13,15 @@ modal.forEach((e) => {
     e.close();
   });
 });
+var c = 0
+easteregg.addEventListener('click',
+  ()=>{
+    
+    c = c + 1
+    if(c == 3){
+      alert("Você encontrou o easter egg! Parabéns!")
+      c = 0
+      location.href = 'jogo.html'
+    }
+  }
+)
