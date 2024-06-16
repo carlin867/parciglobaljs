@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'jersey';
+    src: url(Jersey_15/Jersey15-Regular.ttf);
+}
+body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, orange, red);
+}
+.jogador{
+    position: absolute;
+    height: 149px;
+    width: calc(840px / 8);
+    background: url(../imagens/movimentopf.png);
+    animation: frente .7s steps(8) infinite paused;
+}
+.cesta{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 289px;
+}
+.placar{
+    width: 100%;
+    height: 100vh;
+}
+.pontos{
+    font-size: 10em;
+    position: absolute;
+    font-family: 'jersey',sans-serif;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes frente {
+    0%{
+        background-position: 840px ;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+@keyframes tras {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 840px ;
+    }
+}
+
